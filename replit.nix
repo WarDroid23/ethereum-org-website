@@ -1,5 +1,6 @@
 {pkgs}: {
   deps = [
+    pkgs.apk-tools
     pkgs.haskellPackages.Raincat
     pkgs.perl536Packages.RSSParserLite
     pkgs.perl536Packages.RegexpTrie
