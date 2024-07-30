@@ -1,0 +1,72 @@
+#!/usr/bin/env ruby
+#
+#  Created on 2008-8-2.
+#  Copyright (c) 2008. All rights reserved.
+
+require 'optparse'
+require File.dirname(__FILE__) + '/../lib/gem_tools'
+
+begin
+  require 'rubygems'
+rescue LoadError => e
+  puts e.to_s
+  puts "We can\"t install gems without rubygems"
+  exit 1
+end
+
+command = ARGV.first
+options = {}
+MANDATORY_OPTIONS = %w()
+
+parser = OptionParser.new do |opts|
+  opts.banner = <<BANNER
+GemTools can be used to make sure you have the propper gems and versions for
+your app installed. It handles installing and loading gems during runtime.
+
+Usage: #{File.basename($0)} command [options]
+
+Commands are:
+
+    install
+    Install the gems in ./gems.yml or ./config/gems.yml
+
+    dryrun
+    Print out the commands that would have been run
+
+    setup
+    Generate a starter gems.yml
+
+    check_updates
+    Checks to see if there are newer versions available for the gems
+    
+    to_gemfile
+    Generate a Gemfile from your current gems.yml
+
+Options are:
+BANNER
+
+  opts.separator ""
+  opts.on("-d", "--docs", String,
+          "Install the rdocs and ri during install",
+          "Default: off") { |opt| options[:docs] = opt }
+  opts.on("-f", "--force", String,
+          "Force the install of the gems",
+          "Default: off") { |opt| options[:force] = opt }
+  opts.on("-h", "--help",
+          "Show this help message") { puts opts; exit }
+  opts.on("-v", "--version",
+          "Display the version") {
+            puts "#{File.basename($0)} #{GemTools::VERSION::STRING}"
+            exit
+          }
+  opts.parse!(ARGV)
+
+  if MANDATORY_OPTIONS && MANDATORY_OPTIONS.find { |option| options[option.to_sym].nil? }
+    puts opts; exit
+  end
+
+  OPTS = opts
+  OPTIONS = options
+end.parse!
+
+GemTools.run command

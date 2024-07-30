@@ -1,0 +1,20 @@
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+/nix/store/c4bdx4dja3h06xg1ksv3f51alp5a44li-ruby-3.1.5/bin/ruby extconf.rb
+GemWrappers: Can not wrap missing file: a
+GemWrappers: Can not wrap missing file: gpgen
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240730-13254-mt4inz sitelibdir\=./.gem.20240730-13254-mt4inz clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240730-13254-mt4inz sitelibdir\=./.gem.20240730-13254-mt4inz
+make: Nothing to be done for 'all'.
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240730-13254-mt4inz sitelibdir\=./.gem.20240730-13254-mt4inz install
+make: Nothing to be done for 'install'.
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.1.0/gems/gem-wrappers-1.4.0/ext/wrapper_generator
+make DESTDIR\= sitearchdir\=./.gem.20240730-13254-mt4inz sitelibdir\=./.gem.20240730-13254-mt4inz clean
+make: *** No rule to make target 'clean'.  Stop.

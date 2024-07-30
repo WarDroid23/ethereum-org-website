@@ -1,0 +1,3 @@
+export PATH="/home/runner/ethereum-org-website/.pythonlibs/bin:/nix/store/bry6rrr5m76ygwfjnwjf9c1k6xfw7gsy-python3-wrapper/bin:$PATH"
+export GEM_PATH="/home/runner/ethereum-org-website/.bundle/ruby/3.1.0"
+export GEM_HOME="/home/runner/ethereum-org-website/.bundle/ruby/3.1.0"

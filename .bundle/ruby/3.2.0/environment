@@ -1,0 +1,3 @@
+export PATH="/nix/store/scpaiqhx25l3wnkjznnvadk3bdivyapv-ghc-9.0.2/bin:/nix/store/c7syaba1li0qrm91gf97hb6kpsmbrz6z-go-1.20.4/bin:$PATH"
+export GEM_PATH="/home/runner/ethereum-org-website/.bundle/ruby/3.2.0"
+export GEM_HOME="/home/runner/ethereum-org-website/.bundle/ruby/3.2.0"
