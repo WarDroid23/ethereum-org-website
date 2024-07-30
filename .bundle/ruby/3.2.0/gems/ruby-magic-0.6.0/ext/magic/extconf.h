@@ -1,0 +1,14 @@
+#ifndef EXTCONF_H
+#define EXTCONF_H
+#define HAVE_RUBY_H 1
+#define HAVE_RB_THREAD_CALL_WITHOUT_GVL 1
+#define HAVE_RB_GC_MARK_MOVABLE 1
+#define HAVE_MAGIC_H 1
+#define HAVE_MAGIC_GETPATH 1
+#define HAVE_MAGIC_GETFLAGS 1
+#define HAVE_UTIME_H 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_SYS_TIME_H 1
+#define HAVE_UTIME 1
+#define HAVE_UTIMES 1
+#endif

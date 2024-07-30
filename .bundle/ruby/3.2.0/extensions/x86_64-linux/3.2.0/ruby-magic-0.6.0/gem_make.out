@@ -1,0 +1,255 @@
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/ext/magic
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/bin/ruby extconf.rb
+Building ruby-magic using packaged libraries.
+Static linking is enabled.
+Cross build is disabled.
+Using mini_portile version 2.8.7
+---------- IMPORTANT NOTICE ----------
+Building Ruby Magic with a packaged version of libmagic-5.44.
+Configuration options: --disable-silent-rules --disable-dependency-tracking --enable-fsect-man5 --disable-shared --enable-static CFLAGS\=-fPIC
+The following patches are being applied:
+  - 0001-Don-t-attempt-to-build-tests-documentation-and-Python-bindings.patch
+Extracting file-5.44.tar.gz into tmp/x86_64-pc-linux/ports/libmagic/5.44... OK
+Running git apply with /home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/patches/libmagic/0001-Don-t-attempt-to-build-tests-documentation-and-Python-bindings.patch... system temporary path is world-writable: /tmp
+/tmp is world-writable: /tmp
+OK
+Running 'configure' for libmagic 5.44... OK
+Running 'compile' for libmagic 5.44... OK
+Running 'install' for libmagic 5.44... OK
+Activating libmagic 5.44 (from /home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/ports/x86_64-pc-linux/libmagic/5.44)...
+checking for whether -L/home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/ports/x86_64-pc-linux/libmagic/5.44/lib is accepted as LDFLAGS... yes
+checking for whether -lmagic is accepted as LDFLAGS... yes
+checking for ruby.h... yes
+checking for rb_thread_call_without_gvl()... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_gc_mark_movable()... yes
+checking for magic.h... yes
+checking for -lmagic... yes
+checking for magic_getpath()... yes
+checking for magic_getflags()... yes
+checking for utime.h... yes
+checking for sys/types.h... yes
+checking for sys/time.h... yes
+checking for utime()... yes
+checking for utimes()... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/ext/magic
+make DESTDIR\= sitearchdir\=./.gem.20240730-18507-84xdcp sitelibdir\=./.gem.20240730-18507-84xdcp clean
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/ext/magic
+make DESTDIR\= sitearchdir\=./.gem.20240730-18507-84xdcp sitelibdir\=./.gem.20240730-18507-84xdcp
+compiling functions.c
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:42,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/int.h:26,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/char.h:23,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic.h:24,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/ruby.h:28,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby.h:38,
+                 from common.h:32,
+                 from functions.h:8,
+                 from functions.c:5:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h: In function ‘RB_TEST’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h:159:16: warning: unsigned conversion from ‘int’ to ‘VALUE’ {aka ‘long unsigned int’} changes value from ‘-5’ to ‘18446744073709551611’ [-Wsign-conversion]
+  159 |     return obj & ~RUBY_Qnil;
+      |                ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h: In function ‘RB_NIL_OR_UNDEF_P’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h:229:24: warning: unsigned conversion from ‘int’ to ‘VALUE’ {aka ‘const long unsigned int’} changes value from ‘-33’ to ‘18446744073709551583’ [-Wsign-conversion]
+  229 |     const VALUE mask = ~(RUBY_Qundef ^ RUBY_Qnil);
+      |                        ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘RB_INT2FIX’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:117:29: warning: conversion to ‘long unsigned int’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  117 |     const unsigned long j = i;
+      |                             ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:119:29: warning: conversion to ‘long int’ from ‘long unsigned int’ may change the sign of the result [-Wsign-conversion]
+  119 |     const long          l = k;
+      |                             ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:121:29: warning: conversion to ‘VALUE’ {aka ‘const long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  121 |     const VALUE         n = m;
+      |                             ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rbimpl_fix2long_by_idiv’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:169:28: warning: conversion to ‘long int’ from ‘VALUE’ {aka ‘long unsigned int’} may change the sign of the result [-Wsign-conversion]
+  169 |     const SIGNED_VALUE y = x - RUBY_FIXNUM_FLAG;
+      |                            ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rbimpl_fix2long_by_shift’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:196:28: warning: conversion to ‘long int’ from ‘VALUE’ {aka ‘long unsigned int’} may change the sign of the result [-Wsign-conversion]
+  196 |     const SIGNED_VALUE y = x;
+      |                            ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rb_fix2ulong’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:255:12: warning: conversion to ‘long unsigned int’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  255 |     return rb_fix2long(x);
+      |            ^~~~~~~~~~~~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rb_ulong2num_inline’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:326:28: warning: conversion to ‘long int’ from ‘long unsigned int’ may change the sign of the result [-Wsign-conversion]
+  326 |         return RB_LONG2FIX(v);
+      |                            ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long_long.h: In function ‘rb_num2ull_inline’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:53:22: warning: conversion to ‘long long unsigned int’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+   53 | #define RB_FIX2LONG  rb_fix2long          /**< @alias{rb_fix2long} */
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long_long.h:130:16: note: in expansion of macro ‘RB_FIX2LONG’
+  130 |         return RB_FIX2LONG(x);
+      |                ^~~~~~~~~~~
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic.h:37:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/st_data_t.h: In function ‘RB_ST2FIX’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/st_data_t.h:61:22: warning: conversion to ‘long int’ from ‘st_data_t’ {aka ‘long unsigned int’} may change the sign of the result [-Wsign-conversion]
+   61 |     SIGNED_VALUE x = i;
+      |                      ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/st_data_t.h:72:24: warning: conversion to ‘long int’ from ‘long unsigned int’ may change the sign of the result [-Wsign-conversion]
+   72 |     return RB_LONG2FIX(y);
+      |                        ^
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/assume.h:29,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/backward/2/assume.h:24,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/defines.h:72,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/ruby.h:25:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/core/rarray.h: In function ‘RARRAY_PTR’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/core/rarray.h:551:24: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+  551 |     return RBIMPL_CAST((VALUE *)RARRAY_CONST_PTR(tmp));
+      |                        ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/ruby.h:42:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/memory.h: In function ‘rb_alloc_tmp_buffer2’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/memory.h:642:56: warning: conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  642 |     const size_t total_size = rbimpl_size_mul_or_raise(count, elsize);
+      |                                                        ^~~~~
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h:27,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/encoding.h:22,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/io.h:16,
+                 from common.h:36:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h: In function ‘RB_ENCODING_SET_INLINED’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h:82:28: warning: conversion to ‘VALUE’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |     VALUE f = /* upcast */ encindex;
+      |                            ^~~~~~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h: In function ‘rb_enc_step_back’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h:749:24: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+  749 |     return RBIMPL_CAST((char *)ur);
+      |                        ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h: In function ‘rb_enc_is_newline’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h:45:33: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+   45 |     OnigUChar *up = RBIMPL_CAST((OnigUChar *)p);
+      |                                 ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h:46:33: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+   46 |     OnigUChar *ue = RBIMPL_CAST((OnigUChar *)e);
+      |                                 ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+compiling ruby-magic.c
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:42,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/int.h:26,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/char.h:23,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic.h:24,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/ruby.h:28,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby.h:38,
+                 from common.h:32,
+                 from ruby-magic.h:8,
+                 from ruby-magic.c:5:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h: In function ‘RB_TEST’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h:159:16: warning: unsigned conversion from ‘int’ to ‘VALUE’ {aka ‘long unsigned int’} changes value from ‘-5’ to ‘18446744073709551611’ [-Wsign-conversion]
+  159 |     return obj & ~RUBY_Qnil;
+      |                ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h: In function ‘RB_NIL_OR_UNDEF_P’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/special_consts.h:229:24: warning: unsigned conversion from ‘int’ to ‘VALUE’ {aka ‘const long unsigned int’} changes value from ‘-33’ to ‘18446744073709551583’ [-Wsign-conversion]
+  229 |     const VALUE mask = ~(RUBY_Qundef ^ RUBY_Qnil);
+      |                        ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘RB_INT2FIX’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:117:29: warning: conversion to ‘long unsigned int’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  117 |     const unsigned long j = i;
+      |                             ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:119:29: warning: conversion to ‘long int’ from ‘long unsigned int’ may change the sign of the result [-Wsign-conversion]
+  119 |     const long          l = k;
+      |                             ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:121:29: warning: conversion to ‘VALUE’ {aka ‘const long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  121 |     const VALUE         n = m;
+      |                             ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rbimpl_fix2long_by_idiv’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:169:28: warning: conversion to ‘long int’ from ‘VALUE’ {aka ‘long unsigned int’} may change the sign of the result [-Wsign-conversion]
+  169 |     const SIGNED_VALUE y = x - RUBY_FIXNUM_FLAG;
+      |                            ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rbimpl_fix2long_by_shift’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:196:28: warning: conversion to ‘long int’ from ‘VALUE’ {aka ‘long unsigned int’} may change the sign of the result [-Wsign-conversion]
+  196 |     const SIGNED_VALUE y = x;
+      |                            ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rb_fix2ulong’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:255:12: warning: conversion to ‘long unsigned int’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  255 |     return rb_fix2long(x);
+      |            ^~~~~~~~~~~~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h: In function ‘rb_ulong2num_inline’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:326:28: warning: conversion to ‘long int’ from ‘long unsigned int’ may change the sign of the result [-Wsign-conversion]
+  326 |         return RB_LONG2FIX(v);
+      |                            ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long_long.h: In function ‘rb_num2ull_inline’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long.h:53:22: warning: conversion to ‘long long unsigned int’ from ‘long int’ may change the sign of the result [-Wsign-conversion]
+   53 | #define RB_FIX2LONG  rb_fix2long          /**< @alias{rb_fix2long} */
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/long_long.h:130:16: note: in expansion of macro ‘RB_FIX2LONG’
+  130 |         return RB_FIX2LONG(x);
+      |                ^~~~~~~~~~~
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic.h:37:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/st_data_t.h: In function ‘RB_ST2FIX’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/st_data_t.h:61:22: warning: conversion to ‘long int’ from ‘st_data_t’ {aka ‘long unsigned int’} may change the sign of the result [-Wsign-conversion]
+   61 |     SIGNED_VALUE x = i;
+      |                      ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/arithmetic/st_data_t.h:72:24: warning: conversion to ‘long int’ from ‘long unsigned int’ may change the sign of the result [-Wsign-conversion]
+   72 |     return RB_LONG2FIX(y);
+      |                        ^
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/assume.h:29,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/backward/2/assume.h:24,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/defines.h:72,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/ruby.h:25:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/core/rarray.h: In function ‘RARRAY_PTR’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/core/rarray.h:551:24: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+  551 |     return RBIMPL_CAST((VALUE *)RARRAY_CONST_PTR(tmp));
+      |                        ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/ruby.h:42:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/memory.h: In function ‘rb_alloc_tmp_buffer2’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/memory.h:642:56: warning: conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+  642 |     const size_t total_size = rbimpl_size_mul_or_raise(count, elsize);
+      |                                                        ^~~~~
+In file included from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h:27,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/encoding.h:22,
+                 from /nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/io.h:16,
+                 from common.h:36:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h: In function ‘RB_ENCODING_SET_INLINED’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h:82:28: warning: conversion to ‘VALUE’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+   82 |     VALUE f = /* upcast */ encindex;
+      |                            ^~~~~~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h: In function ‘rb_enc_step_back’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/encoding.h:749:24: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+  749 |     return RBIMPL_CAST((char *)ur);
+      |                        ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h: In function ‘rb_enc_is_newline’:
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h:45:33: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+   45 |     OnigUChar *up = RBIMPL_CAST((OnigUChar *)p);
+      |                                 ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/encoding/ctype.h:46:33: warning: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+   46 |     OnigUChar *ue = RBIMPL_CAST((OnigUChar *)e);
+      |                                 ^
+/nix/store/8fg60ic5fbj9qncw1m760z08zljich6q-ruby-3.2.2/include/ruby-3.2.0/ruby/internal/cast.h:31:29: note: in definition of macro ‘RBIMPL_CAST’
+   31 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+linking shared-object magic/magic.so
+Cleaning files only used during build.
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/ext/magic
+make DESTDIR\= sitearchdir\=./.gem.20240730-18507-84xdcp sitelibdir\=./.gem.20240730-18507-84xdcp install
+install -c -p -m 755 magic.so ./.gem.20240730-18507-84xdcp/magic
+
+current directory: /home/runner/ethereum-org-website/.bundle/ruby/3.2.0/gems/ruby-magic-0.6.0/ext/magic
+make DESTDIR\= sitearchdir\=./.gem.20240730-18507-84xdcp sitelibdir\=./.gem.20240730-18507-84xdcp clean

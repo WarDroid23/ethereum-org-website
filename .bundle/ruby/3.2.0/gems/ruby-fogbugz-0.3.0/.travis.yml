@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+  - 2.0.0-p648
+  - 2.1.10
+  - 2.2.6
+  - 2.3.3
+  - jruby-9.0.0.0
+sudo: false
+
+after_success:
+  - bundle exec codeclimate-test-reporter
+
+addons:
+  code_climate:
+    repo_token: ef52b4659b14e65b70be219cf870eaffcef8ee9c260b767b26694e2c7f59e88c

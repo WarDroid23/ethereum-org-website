@@ -71,3 +71,33 @@ gem "ruby_parser", "= 3.21.1"
 gem "ruby-saml", "= 1.16.0"
 
 gem "ruby-rc4", "= 0.1.5"
+
+gem "ruby-prof", "= 1.7.0"
+
+gem "ruby-magic", "= 0.6.0"
+
+gem "ruby-macho", "= 4.1.0"
+
+gem "ruby-ip", "= 0.9.3"
+
+gem "ruby-ll", "= 2.1.3"
+
+gem "ruby-vips", "= 2.2.2"
+
+gem "ruby-hmac", "= 0.4.0"
+
+gem "ruby-openid", "= 2.9.2"
+
+gem "ruby-graphviz", "= 1.2.5"
+
+gem "ruby-enum", "= 1.0.0"
+
+gem "ruby-kafka", "= 1.5.0"
+
+gem "ruby-statistics", "= 4.0.0"
+
+gem "ruby-openai", "= 7.1.0"
+
+gem "ruby-fogbugz", "= 0.3.0"
+
+gem "ruby-ole", "= 1.2.13.1"

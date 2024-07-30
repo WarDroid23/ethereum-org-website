@@ -1,0 +1,22 @@
+libmagic:
+  version: "5.44"
+  sha256: "3751c7fba8dbc831cb8d7cc8aff21035459b8ce5155ef8b0880a27d028475f3b"
+  #  Manually verified checksum:
+  #
+  #    $ gpg --verify file-5.44.tar.gz.asc file-5.44.tar.gz
+  #    gpg: Signature made Tue 27 Dec 2022 03:27:03 JST
+  #    gpg:                using DSA key BE04995BA8F90ED0C0C176C471112AB16CB33B3A
+  #    gpg: Good signature from "Christos Zoulas (personal key) <christos@zoulas.com>" [unknown]
+  #    gpg:                 aka "Christos Zoulas (NetBSD key) <christos@netbsd.org>" [unknown]
+  #    gpg: WARNING: This key is not certified with a trusted signature!
+  #    gpg:          There is no indication that the signature belongs to the owner.
+  #    Primary key fingerprint: BE04 995B A8F9 0ED0 C0C1  76C4 7111 2AB1 6CB3 3B3A
+  #
+  #  Using this PGP signature:
+  #
+  #    -----BEGIN PGP SIGNATURE-----
+  #
+  #    iF0EABECAB0WIQS+BJlbqPkO0MDBdsRxESqxbLM7OgUCY6nndwAKCRBxESqxbLM7
+  #    OiUWAJ9ygauXJ3pohF38SQuLYu+J8qayuwCeIFPcEukUyNuYv04B9FIXkumreI8=
+  #    =/CFO
+  #    -----END PGP SIGNATURE-----
